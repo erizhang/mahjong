@@ -1,0 +1,43 @@
+# 构建问题解决经验记录
+
+## CppUTest相关问题解决方案
+
+### 问题1：CppUTest框架缺失
+**现象**：`Makefile:33: cpputest/build/MakefileWorker.mk: No such file or directory`
+**原因**：项目依赖的CppUTest测试框架没有安装
+**解决方案**：
+1. 克隆CppUTest仓库：`git clone https://github.com/cpputest/cpputest.git`
+2. 使用CMake构建：
+   ```bash
+   mkdir cpputest_build
+   cd cpputest_build
+   cmake ../cpputest
+   make -j4
+   ```
+3. 创建lib目录并复制库文件：
+   ```bash
+   mkdir -p cpputest/lib
+   cp cpputest_build/src/CppUTest/libCppUTest.a cpputest/lib/
+   cp cpputest_build/src/CppUTestExt/libCppUTestExt.a cpputest/lib/
+   ```
+
+### 问题2：Makefile中的拼写错误
+**现象**：变量名拼写错误导致构建失败
+**发现的错误**：
+- `PRDUCT_MAIN_OBJ` → `PRODUCT_MAIN_OBJ`
+- `localhst` → `localhost`
+**解决方案**：仔细检查并修正Makefile中的拼写错误
+
+### 问题3：重复定义链接错误
+**现象**：`multiple definition of shutdown_server`
+**原因**：在头文件中定义了全局变量，导致每个包含该头文件的源文件都创建该变量的实例
+**解决方案**：
+1. 在头文件中使用`extern`声明：`extern void (*shutdown_server)(void);`
+2. 在对应的源文件中定义变量：`void (*shutdown_server)(void);`
+
+## 总结
+解决C/C++构建问题的一般步骤：
+1. 仔细阅读错误信息，识别问题类型（缺失依赖、拼写错误、链接错误等）
+2. 对于外部依赖问题，确保正确安装和配置依赖库
+3. 对于链接错误，检查是否有重复定义或缺失定义
+4. 修复后逐步验证构建过程

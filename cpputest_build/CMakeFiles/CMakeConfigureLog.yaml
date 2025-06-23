@@ -1,0 +1,2346 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      The system is: Linux - 6.8.0-1024-aws - x86_64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+      
+      The C compiler identification is Clang, found in:
+        /workspace/cpputest_build/CMakeFiles/3.31.6/CompilerIdC/a.out
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+      
+      The CXX compiler identification is Clang, found in:
+        /workspace/cpputest_build/CMakeFiles/3.31.6/CompilerIdCXX/a.out
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dbb25/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_dbb25.dir/build.make CMakeFiles/cmTC_dbb25.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i'
+        Building C object CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o
+        /usr/bin/cc   -v -MD -MT CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i -v -fcoverage-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/llvm-20/lib/clang/20/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking C executable cmTC_dbb25
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbb25.dir/link.txt --verbose=1
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dbb25 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.44
+        /usr/bin/cc  -v -Wl,-v CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -o cmTC_dbb25
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/llvm-20/lib/clang/20/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/llvm-20/lib/clang/20/include] ==> [/usr/lib/llvm-20/lib/clang/20/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/lib/llvm-20/lib/clang/20/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_dbb25/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_dbb25.dir/build.make CMakeFiles/cmTC_dbb25.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i']
+        ignore line: [Building C object CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o]
+        ignore line: [/usr/bin/cc   -v -MD -MT CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i -v -fcoverage-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rOnZ7i -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -x c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/llvm-20/lib/clang/20/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking C executable cmTC_dbb25]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dbb25.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_dbb25 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_dbb25] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_dbb25.dir/CMakeCCompilerABI.c.o] ==> ignore
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [-lc] ==> lib [c]
+          arg [-lgcc] ==> lib [gcc]
+          arg [--as-needed] ==> ignore
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [--no-as-needed] ==> ignore
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'C': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the C compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_97003/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_97003.dir/build.make CMakeFiles/cmTC_97003.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW'
+        Building CXX object CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o
+        /usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         (in-process)
+         "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW -v -fcoverage-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu
+        ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"
+        ignoring nonexistent directory "/include"
+        #include "..." search starts here:
+        #include <...> search starts here:
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14
+         /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward
+         /usr/lib/llvm-20/lib/clang/20/include
+         /usr/local/include
+         /usr/include/x86_64-linux-gnu
+         /usr/include
+        End of search list.
+        Linking CXX executable cmTC_97003
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97003.dir/link.txt --verbose=1
+        Ubuntu clang version 20.1.2 (0ubuntu1)
+        Target: x86_64-pc-linux-gnu
+        Thread model: posix
+        InstalledDir: /usr/lib/llvm-20/bin
+        Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14
+        Candidate multilib: .;@m64
+        Selected multilib: .;@m64
+         "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_97003 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o
+        GNU ld (GNU Binutils for Ubuntu) 2.44
+        /usr/bin/c++  -v -Wl,-v CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_97003
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW'
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:182 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit include dir info: rv=done
+        found start of include info
+        found start of implicit include info
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+          add: [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+          add: [/usr/lib/llvm-20/lib/clang/20/include]
+          add: [/usr/local/include]
+          add: [/usr/include/x86_64-linux-gnu]
+          add: [/usr/include]
+        end of search list found
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14] ==> [/usr/include/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14] ==> [/usr/include/x86_64-linux-gnu/c++/14]
+        collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward] ==> [/usr/include/c++/14/backward]
+        collapse include dir [/usr/lib/llvm-20/lib/clang/20/include] ==> [/usr/lib/llvm-20/lib/clang/20/include]
+        collapse include dir [/usr/local/include] ==> [/usr/local/include]
+        collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+        collapse include dir [/usr/include] ==> [/usr/include]
+        implicit include dirs: [/usr/include/c++/14;/usr/include/x86_64-linux-gnu/c++/14;/usr/include/c++/14/backward;/usr/lib/llvm-20/lib/clang/20/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
+        ignore line: [Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW']
+        ignore line: []
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_97003/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_97003.dir/build.make CMakeFiles/cmTC_97003.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW']
+        ignore line: [Building CXX object CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o]
+        ignore line: [/usr/bin/c++   -v -MD -MT CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        ignore line: [ (in-process)]
+        ignore line: [ "/usr/lib/llvm-20/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW -v -fcoverage-compilation-dir=/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-4v8FdW -resource-dir /usr/lib/llvm-20/lib/clang/20 -dependency-file CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward -internal-isystem /usr/lib/llvm-20/lib/clang/20/include -internal-isystem /usr/local/include -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -ferror-limit 19 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [clang -cc1 version 20.1.2 based upon LLVM 20.1.2 default target x86_64-pc-linux-gnu]
+        ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/14/../../../../x86_64-linux-gnu/include"]
+        ignore line: [ignoring nonexistent directory "/include"]
+        ignore line: [#include "..." search starts here:]
+        ignore line: [#include <...> search starts here:]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/x86_64-linux-gnu/c++/14]
+        ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/14/../../../../include/c++/14/backward]
+        ignore line: [ /usr/lib/llvm-20/lib/clang/20/include]
+        ignore line: [ /usr/local/include]
+        ignore line: [ /usr/include/x86_64-linux-gnu]
+        ignore line: [ /usr/include]
+        ignore line: [End of search list.]
+        ignore line: [Linking CXX executable cmTC_97003]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97003.dir/link.txt --verbose=1]
+        ignore line: [Ubuntu clang version 20.1.2 (0ubuntu1)]
+        ignore line: [Target: x86_64-pc-linux-gnu]
+        ignore line: [Thread model: posix]
+        ignore line: [InstalledDir: /usr/lib/llvm-20/bin]
+        ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/14]
+        ignore line: [Candidate multilib: .]
+        ignore line: [@m64]
+        ignore line: [Selected multilib: .]
+        ignore line: [@m64]
+        link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -pie -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_97003 /lib/x86_64-linux-gnu/Scrt1.o /lib/x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/14 -L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/lib -L/usr/lib -v CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o /lib/x86_64-linux-gnu/crtn.o]
+          arg [/usr/bin/ld] ==> ignore
+          arg [-zrelro] ==> ignore
+          arg [--hash-style=gnu] ==> ignore
+          arg [--build-id] ==> ignore
+          arg [--eh-frame-hdr] ==> ignore
+          arg [-m] ==> ignore
+          arg [elf_x86_64] ==> ignore
+          arg [-pie] ==> ignore
+          arg [-dynamic-linker] ==> ignore
+          arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+          arg [-o] ==> ignore
+          arg [cmTC_97003] ==> ignore
+          arg [/lib/x86_64-linux-gnu/Scrt1.o] ==> obj [/lib/x86_64-linux-gnu/Scrt1.o]
+          arg [/lib/x86_64-linux-gnu/crti.o] ==> obj [/lib/x86_64-linux-gnu/crti.o]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14]
+          arg [-L/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64]
+          arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+          arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+          arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+          arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+          arg [-L/lib] ==> dir [/lib]
+          arg [-L/usr/lib] ==> dir [/usr/lib]
+          arg [-v] ==> ignore
+          arg [CMakeFiles/cmTC_97003.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+          arg [-lstdc++] ==> lib [stdc++]
+          arg [-lm] ==> lib [m]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [-lc] ==> lib [c]
+          arg [-lgcc_s] ==> lib [gcc_s]
+          arg [-lgcc] ==> lib [gcc]
+          arg [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o]
+          arg [/lib/x86_64-linux-gnu/crtn.o] ==> obj [/lib/x86_64-linux-gnu/crtn.o]
+        linker tool for 'CXX': /usr/bin/ld
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14] ==> [/usr/lib/gcc/x86_64-linux-gnu/14]
+        collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/14/../../../../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+        collapse library dir [/lib/../lib64] ==> [/lib64]
+        collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+        collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+        collapse library dir [/lib] ==> [/lib]
+        collapse library dir [/usr/lib] ==> [/usr/lib]
+        implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+        implicit objs: [/lib/x86_64-linux-gnu/Scrt1.o;/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/14/crtendS.o;/lib/x86_64-linux-gnu/crtn.o]
+        implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/14;/usr/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/lib;/usr/lib]
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "/usr/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "/usr/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:6 (project)"
+    message: |
+      Running the CXX compiler's linker: "/usr/bin/ld" "-v"
+      GNU ld (GNU Binutils for Ubuntu) 2.44
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:262 (check_include_file)"
+      - "CMakeLists.txt:38 (check_type_size)"
+    checks:
+      - "Looking for sys/types.h"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-la8WAz"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-la8WAz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SYS_TYPES_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-la8WAz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1ff32/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1ff32.dir/build.make CMakeFiles/cmTC_1ff32.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-la8WAz'
+        Building C object CMakeFiles/cmTC_1ff32.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_1ff32.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_1ff32.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_1ff32.dir/CheckIncludeFile.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-la8WAz/CheckIncludeFile.c
+        Linking C executable cmTC_1ff32
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ff32.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_1ff32.dir/CheckIncludeFile.c.o -o cmTC_1ff32
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-la8WAz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:263 (check_include_file)"
+      - "CMakeLists.txt:38 (check_type_size)"
+    checks:
+      - "Looking for stdint.h"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-COSbg1"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-COSbg1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDINT_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-COSbg1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f9b8e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f9b8e.dir/build.make CMakeFiles/cmTC_f9b8e.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-COSbg1'
+        Building C object CMakeFiles/cmTC_f9b8e.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_f9b8e.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_f9b8e.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_f9b8e.dir/CheckIncludeFile.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-COSbg1/CheckIncludeFile.c
+        Linking C executable cmTC_f9b8e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f9b8e.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_f9b8e.dir/CheckIncludeFile.c.o -o cmTC_f9b8e
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-COSbg1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckIncludeFile.cmake:99 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:264 (check_include_file)"
+      - "CMakeLists.txt:38 (check_type_size)"
+    checks:
+      - "Looking for stddef.h"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-r69pXg"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-r69pXg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_STDDEF_H"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-r69pXg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6e04f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6e04f.dir/build.make CMakeFiles/cmTC_6e04f.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-r69pXg'
+        Building C object CMakeFiles/cmTC_6e04f.dir/CheckIncludeFile.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_6e04f.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_6e04f.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_6e04f.dir/CheckIncludeFile.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-r69pXg/CheckIncludeFile.c
+        Linking C executable cmTC_6e04f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e04f.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_6e04f.dir/CheckIncludeFile.c.o -o cmTC_6e04f
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-r69pXg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:156 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckTypeSize.cmake:283 (__check_type_size_impl)"
+      - "CMakeLists.txt:38 (check_type_size)"
+    checks:
+      - "Check size of long long"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-xiRHDl"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-xiRHDl"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "HAVE_SIZEOF_LONGLONG"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-xiRHDl'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_332dd/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_332dd.dir/build.make CMakeFiles/cmTC_332dd.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-xiRHDl'
+        Building C object CMakeFiles/cmTC_332dd.dir/SIZEOF_LONGLONG.c.o
+        /usr/bin/cc    -MD -MT CMakeFiles/cmTC_332dd.dir/SIZEOF_LONGLONG.c.o -MF CMakeFiles/cmTC_332dd.dir/SIZEOF_LONGLONG.c.o.d -o CMakeFiles/cmTC_332dd.dir/SIZEOF_LONGLONG.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-xiRHDl/SIZEOF_LONGLONG.c
+        Linking C executable cmTC_332dd
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_332dd.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_332dd.dir/SIZEOF_LONGLONG.c.o -o cmTC_332dd
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-xiRHDl'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:85 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for fopen_s"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CPPUTEST_HAVE_SECURE_STDLIB"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_76cc3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_76cc3.dir/build.make CMakeFiles/cmTC_76cc3.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26'
+        Building CXX object CMakeFiles/cmTC_76cc3.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_76cc3.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_76cc3.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_76cc3.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26/CheckSymbolExists.cxx
+        /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26/CheckSymbolExists.cxx:8:19: error: use of undeclared identifier 'fopen_s'
+            8 |   return ((int*)(&fopen_s))[argc];
+              |                   ^
+        1 error generated.
+        gmake[1]: *** [CMakeFiles/cmTC_76cc3.dir/build.make:82: CMakeFiles/cmTC_76cc3.dir/CheckSymbolExists.cxx.o] Error 1
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-5YTn26'
+        gmake: *** [Makefile:134: cmTC_76cc3/fast] Error 2
+        
+      exitCode: 2
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wall"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-jWHF7F"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-jWHF7F"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-jWHF7F'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3b07c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3b07c.dir/build.make CMakeFiles/cmTC_3b07c.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-jWHF7F'
+        Building C object CMakeFiles/cmTC_3b07c.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wall -Wall -MD -MT CMakeFiles/cmTC_3b07c.dir/src.c.o -MF CMakeFiles/cmTC_3b07c.dir/src.c.o.d -o CMakeFiles/cmTC_3b07c.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-jWHF7F/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wall 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_3b07c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3b07c.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_3b07c.dir/src.c.o -o cmTC_3b07c
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-jWHF7F'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wextra"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-WaolIV"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-WaolIV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-WaolIV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1450/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e1450.dir/build.make CMakeFiles/cmTC_e1450.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-WaolIV'
+        Building C object CMakeFiles/cmTC_e1450.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wextra -Wextra -MD -MT CMakeFiles/cmTC_e1450.dir/src.c.o -MF CMakeFiles/cmTC_e1450.dir/src.c.o.d -o CMakeFiles/cmTC_e1450.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-WaolIV/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wextra 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_e1450
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1450.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_e1450.dir/src.c.o -o cmTC_e1450
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-WaolIV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-pedantic"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-dUzHX5"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-dUzHX5"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-dUzHX5'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3e8f8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3e8f8.dir/build.make CMakeFiles/cmTC_3e8f8.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-dUzHX5'
+        Building C object CMakeFiles/cmTC_3e8f8.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-pedantic -pedantic -MD -MT CMakeFiles/cmTC_3e8f8.dir/src.c.o -MF CMakeFiles/cmTC_3e8f8.dir/src.c.o.d -o CMakeFiles/cmTC_3e8f8.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-dUzHX5/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-pedantic 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_3e8f8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e8f8.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_3e8f8.dir/src.c.o -o cmTC_3e8f8
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-dUzHX5'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wshadow"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tuLzrn"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tuLzrn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tuLzrn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e22bb/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e22bb.dir/build.make CMakeFiles/cmTC_e22bb.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tuLzrn'
+        Building C object CMakeFiles/cmTC_e22bb.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wshadow -Wshadow -MD -MT CMakeFiles/cmTC_e22bb.dir/src.c.o -MF CMakeFiles/cmTC_e22bb.dir/src.c.o.d -o CMakeFiles/cmTC_e22bb.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tuLzrn/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wshadow 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_e22bb
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e22bb.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_e22bb.dir/src.c.o -o cmTC_e22bb
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tuLzrn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wswitch-default"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-FVhKML"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-FVhKML"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wswitch-default"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-FVhKML'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_9bdd3/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_9bdd3.dir/build.make CMakeFiles/cmTC_9bdd3.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-FVhKML'
+        Building C object CMakeFiles/cmTC_9bdd3.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wswitch-default -Wswitch-default -MD -MT CMakeFiles/cmTC_9bdd3.dir/src.c.o -MF CMakeFiles/cmTC_9bdd3.dir/src.c.o.d -o CMakeFiles/cmTC_9bdd3.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-FVhKML/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wswitch-default 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_9bdd3
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9bdd3.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_9bdd3.dir/src.c.o -o cmTC_9bdd3
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-FVhKML'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wswitch-enum"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-8sMakE"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-8sMakE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wswitch-enum"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-8sMakE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e27af/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e27af.dir/build.make CMakeFiles/cmTC_e27af.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-8sMakE'
+        Building C object CMakeFiles/cmTC_e27af.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wswitch-enum -Wswitch-enum -MD -MT CMakeFiles/cmTC_e27af.dir/src.c.o -MF CMakeFiles/cmTC_e27af.dir/src.c.o.d -o CMakeFiles/cmTC_e27af.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-8sMakE/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wswitch-enum 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_e27af
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e27af.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_e27af.dir/src.c.o -o cmTC_e27af
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-8sMakE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wconversion"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nOnZSD"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nOnZSD"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nOnZSD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1de5c/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1de5c.dir/build.make CMakeFiles/cmTC_1de5c.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nOnZSD'
+        Building C object CMakeFiles/cmTC_1de5c.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wconversion -Wconversion -MD -MT CMakeFiles/cmTC_1de5c.dir/src.c.o -MF CMakeFiles/cmTC_1de5c.dir/src.c.o.d -o CMakeFiles/cmTC_1de5c.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nOnZSD/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wconversion 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_1de5c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1de5c.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_1de5c.dir/src.c.o -o cmTC_1de5c
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nOnZSD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wsign-conversion"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tkST21"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tkST21"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wsign-conversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tkST21'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_182e7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_182e7.dir/build.make CMakeFiles/cmTC_182e7.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tkST21'
+        Building C object CMakeFiles/cmTC_182e7.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wsign-conversion -Wsign-conversion -MD -MT CMakeFiles/cmTC_182e7.dir/src.c.o -MF CMakeFiles/cmTC_182e7.dir/src.c.o.d -o CMakeFiles/cmTC_182e7.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tkST21/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wsign-conversion 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_182e7
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_182e7.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_182e7.dir/src.c.o -o cmTC_182e7
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tkST21'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wmissing-include-dirs"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XNIxMb"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XNIxMb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wmissing-include-dirs"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XNIxMb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_20fdc/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_20fdc.dir/build.make CMakeFiles/cmTC_20fdc.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XNIxMb'
+        Building C object CMakeFiles/cmTC_20fdc.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wmissing-include-dirs -Wmissing-include-dirs -MD -MT CMakeFiles/cmTC_20fdc.dir/src.c.o -MF CMakeFiles/cmTC_20fdc.dir/src.c.o.d -o CMakeFiles/cmTC_20fdc.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XNIxMb/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wmissing-include-dirs 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_20fdc
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20fdc.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_20fdc.dir/src.c.o -o cmTC_20fdc
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XNIxMb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wno-padded"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-UOPHFQ"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-UOPHFQ"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wno-padded"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-UOPHFQ'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0fd5f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0fd5f.dir/build.make CMakeFiles/cmTC_0fd5f.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-UOPHFQ'
+        Building C object CMakeFiles/cmTC_0fd5f.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wno-padded -Wno-padded -MD -MT CMakeFiles/cmTC_0fd5f.dir/src.c.o -MF CMakeFiles/cmTC_0fd5f.dir/src.c.o.d -o CMakeFiles/cmTC_0fd5f.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-UOPHFQ/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wno-padded 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_0fd5f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0fd5f.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_0fd5f.dir/src.c.o -o cmTC_0fd5f
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-UOPHFQ'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wno-disabled-macro-expansion"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-zdHe1y"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-zdHe1y"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wno-disabled-macro-expansion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-zdHe1y'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a3676/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a3676.dir/build.make CMakeFiles/cmTC_a3676.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-zdHe1y'
+        Building C object CMakeFiles/cmTC_a3676.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wno-disabled-macro-expansion -Wno-disabled-macro-expansion -MD -MT CMakeFiles/cmTC_a3676.dir/src.c.o -MF CMakeFiles/cmTC_a3676.dir/src.c.o.d -o CMakeFiles/cmTC_a3676.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-zdHe1y/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wno-disabled-macro-expansion 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_a3676
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a3676.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_a3676.dir/src.c.o -o cmTC_a3676
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-zdHe1y'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wreserved-id-macro"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Nyer4T"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Nyer4T"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wreserved-id-macro"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Nyer4T'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04ed5/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04ed5.dir/build.make CMakeFiles/cmTC_04ed5.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Nyer4T'
+        Building C object CMakeFiles/cmTC_04ed5.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wreserved-id-macro -Wreserved-id-macro -MD -MT CMakeFiles/cmTC_04ed5.dir/src.c.o -MF CMakeFiles/cmTC_04ed5.dir/src.c.o.d -o CMakeFiles/cmTC_04ed5.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Nyer4T/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wreserved-id-macro 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_04ed5
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04ed5.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_04ed5.dir/src.c.o -o cmTC_04ed5
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Nyer4T'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wreserved-identifier"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XHPWbc"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XHPWbc"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wreserved-identifier"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XHPWbc'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_04b46/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_04b46.dir/build.make CMakeFiles/cmTC_04b46.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XHPWbc'
+        Building C object CMakeFiles/cmTC_04b46.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wreserved-identifier -Wreserved-identifier -MD -MT CMakeFiles/cmTC_04b46.dir/src.c.o -MF CMakeFiles/cmTC_04b46.dir/src.c.o.d -o CMakeFiles/cmTC_04b46.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XHPWbc/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wreserved-identifier 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_04b46
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_04b46.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_04b46.dir/src.c.o -o cmTC_04b46
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-XHPWbc'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wno-long-long"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-KOTVOR"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-KOTVOR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wno-long-long"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-KOTVOR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_809d9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_809d9.dir/build.make CMakeFiles/cmTC_809d9.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-KOTVOR'
+        Building C object CMakeFiles/cmTC_809d9.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wno-long-long -Wno-long-long -MD -MT CMakeFiles/cmTC_809d9.dir/src.c.o -MF CMakeFiles/cmTC_809d9.dir/src.c.o.d -o CMakeFiles/cmTC_809d9.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-KOTVOR/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wno-long-long 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_809d9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_809d9.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_809d9.dir/src.c.o -o cmTC_809d9
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-KOTVOR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wno-unsafe-buffer-usage"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Q30T5h"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Q30T5h"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wno-unsafe-buffer-usage"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Q30T5h'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5fd5a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5fd5a.dir/build.make CMakeFiles/cmTC_5fd5a.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Q30T5h'
+        Building C object CMakeFiles/cmTC_5fd5a.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wno-unsafe-buffer-usage -Wno-unsafe-buffer-usage -MD -MT CMakeFiles/cmTC_5fd5a.dir/src.c.o -MF CMakeFiles/cmTC_5fd5a.dir/src.c.o.d -o CMakeFiles/cmTC_5fd5a.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Q30T5h/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wno-unsafe-buffer-usage 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_5fd5a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fd5a.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_5fd5a.dir/src.c.o -o cmTC_5fd5a
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-Q30T5h'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCCompilerFlag.cmake:56 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:55 (check_c_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_C_FLAG_-Wstrict-prototypes"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-O3DNyv"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-O3DNyv"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_C_FLAG_-Wstrict-prototypes"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-O3DNyv'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_eeb0a/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_eeb0a.dir/build.make CMakeFiles/cmTC_eeb0a.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-O3DNyv'
+        Building C object CMakeFiles/cmTC_eeb0a.dir/src.c.o
+        /usr/bin/cc   -Wno-error   -DWARNING_C_FLAG_-Wstrict-prototypes -Wstrict-prototypes -MD -MT CMakeFiles/cmTC_eeb0a.dir/src.c.o -MF CMakeFiles/cmTC_eeb0a.dir/src.c.o.d -o CMakeFiles/cmTC_eeb0a.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-O3DNyv/src.c
+        In file included from <built-in>:410:
+        <command line>:1:24: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_C_FLAG_-Wstrict-prototypes 1
+              |                        ^
+        1 warning generated.
+        Linking C executable cmTC_eeb0a
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eeb0a.dir/link.txt --verbose=1
+        /usr/bin/cc  -Wno-error CMakeFiles/cmTC_eeb0a.dir/src.c.o -o cmTC_eeb0a
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-O3DNyv'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wall"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-sm2bA8"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-sm2bA8"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wall"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-sm2bA8'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a7acf/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a7acf.dir/build.make CMakeFiles/cmTC_a7acf.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-sm2bA8'
+        Building CXX object CMakeFiles/cmTC_a7acf.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wall -Wall -MD -MT CMakeFiles/cmTC_a7acf.dir/src.cxx.o -MF CMakeFiles/cmTC_a7acf.dir/src.cxx.o.d -o CMakeFiles/cmTC_a7acf.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-sm2bA8/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wall 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_a7acf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7acf.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_a7acf.dir/src.cxx.o -o cmTC_a7acf
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-sm2bA8'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wextra"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-32Z1Tb"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-32Z1Tb"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wextra"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-32Z1Tb'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c5644/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c5644.dir/build.make CMakeFiles/cmTC_c5644.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-32Z1Tb'
+        Building CXX object CMakeFiles/cmTC_c5644.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wextra -Wextra -MD -MT CMakeFiles/cmTC_c5644.dir/src.cxx.o -MF CMakeFiles/cmTC_c5644.dir/src.cxx.o.d -o CMakeFiles/cmTC_c5644.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-32Z1Tb/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wextra 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_c5644
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c5644.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_c5644.dir/src.cxx.o -o cmTC_c5644
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-32Z1Tb'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-pedantic"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-DwkeTV"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-DwkeTV"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-pedantic"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-DwkeTV'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1389b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1389b.dir/build.make CMakeFiles/cmTC_1389b.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-DwkeTV'
+        Building CXX object CMakeFiles/cmTC_1389b.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-pedantic -pedantic -MD -MT CMakeFiles/cmTC_1389b.dir/src.cxx.o -MF CMakeFiles/cmTC_1389b.dir/src.cxx.o.d -o CMakeFiles/cmTC_1389b.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-DwkeTV/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-pedantic 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_1389b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1389b.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_1389b.dir/src.cxx.o -o cmTC_1389b
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-DwkeTV'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wshadow"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-SgMzwy"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-SgMzwy"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wshadow"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-SgMzwy'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2bdd6/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2bdd6.dir/build.make CMakeFiles/cmTC_2bdd6.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-SgMzwy'
+        Building CXX object CMakeFiles/cmTC_2bdd6.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wshadow -Wshadow -MD -MT CMakeFiles/cmTC_2bdd6.dir/src.cxx.o -MF CMakeFiles/cmTC_2bdd6.dir/src.cxx.o.d -o CMakeFiles/cmTC_2bdd6.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-SgMzwy/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wshadow 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_2bdd6
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bdd6.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_2bdd6.dir/src.cxx.o -o cmTC_2bdd6
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-SgMzwy'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wswitch-default"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nONhHA"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nONhHA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wswitch-default"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nONhHA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e95f8/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_e95f8.dir/build.make CMakeFiles/cmTC_e95f8.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nONhHA'
+        Building CXX object CMakeFiles/cmTC_e95f8.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wswitch-default -Wswitch-default -MD -MT CMakeFiles/cmTC_e95f8.dir/src.cxx.o -MF CMakeFiles/cmTC_e95f8.dir/src.cxx.o.d -o CMakeFiles/cmTC_e95f8.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nONhHA/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wswitch-default 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_e95f8
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e95f8.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_e95f8.dir/src.cxx.o -o cmTC_e95f8
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-nONhHA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wswitch-enum"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-E8dXjR"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-E8dXjR"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wswitch-enum"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-E8dXjR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_11b82/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_11b82.dir/build.make CMakeFiles/cmTC_11b82.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-E8dXjR'
+        Building CXX object CMakeFiles/cmTC_11b82.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wswitch-enum -Wswitch-enum -MD -MT CMakeFiles/cmTC_11b82.dir/src.cxx.o -MF CMakeFiles/cmTC_11b82.dir/src.cxx.o.d -o CMakeFiles/cmTC_11b82.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-E8dXjR/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wswitch-enum 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_11b82
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_11b82.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_11b82.dir/src.cxx.o -o cmTC_11b82
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-E8dXjR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wconversion"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-2HY3J0"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-2HY3J0"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wconversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-2HY3J0'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_01f49/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_01f49.dir/build.make CMakeFiles/cmTC_01f49.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-2HY3J0'
+        Building CXX object CMakeFiles/cmTC_01f49.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wconversion -Wconversion -MD -MT CMakeFiles/cmTC_01f49.dir/src.cxx.o -MF CMakeFiles/cmTC_01f49.dir/src.cxx.o.d -o CMakeFiles/cmTC_01f49.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-2HY3J0/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wconversion 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_01f49
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_01f49.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_01f49.dir/src.cxx.o -o cmTC_01f49
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-2HY3J0'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wsign-conversion"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-HeYrzm"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-HeYrzm"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wsign-conversion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-HeYrzm'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_cb175/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_cb175.dir/build.make CMakeFiles/cmTC_cb175.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-HeYrzm'
+        Building CXX object CMakeFiles/cmTC_cb175.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wsign-conversion -Wsign-conversion -MD -MT CMakeFiles/cmTC_cb175.dir/src.cxx.o -MF CMakeFiles/cmTC_cb175.dir/src.cxx.o.d -o CMakeFiles/cmTC_cb175.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-HeYrzm/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wsign-conversion 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_cb175
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb175.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_cb175.dir/src.cxx.o -o cmTC_cb175
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-HeYrzm'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wmissing-include-dirs"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-BXn1mn"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-BXn1mn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wmissing-include-dirs"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-BXn1mn'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_f2475/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_f2475.dir/build.make CMakeFiles/cmTC_f2475.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-BXn1mn'
+        Building CXX object CMakeFiles/cmTC_f2475.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wmissing-include-dirs -Wmissing-include-dirs -MD -MT CMakeFiles/cmTC_f2475.dir/src.cxx.o -MF CMakeFiles/cmTC_f2475.dir/src.cxx.o.d -o CMakeFiles/cmTC_f2475.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-BXn1mn/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wmissing-include-dirs 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_f2475
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f2475.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_f2475.dir/src.cxx.o -o cmTC_f2475
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-BXn1mn'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-padded"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-1y1tlM"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-1y1tlM"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-padded"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-1y1tlM'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_83b37/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_83b37.dir/build.make CMakeFiles/cmTC_83b37.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-1y1tlM'
+        Building CXX object CMakeFiles/cmTC_83b37.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-padded -Wno-padded -MD -MT CMakeFiles/cmTC_83b37.dir/src.cxx.o -MF CMakeFiles/cmTC_83b37.dir/src.cxx.o.d -o CMakeFiles/cmTC_83b37.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-1y1tlM/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-padded 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_83b37
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83b37.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_83b37.dir/src.cxx.o -o cmTC_83b37
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-1y1tlM'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-disabled-macro-expansion"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-N8s4Up"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-N8s4Up"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-disabled-macro-expansion"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-N8s4Up'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c398b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c398b.dir/build.make CMakeFiles/cmTC_c398b.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-N8s4Up'
+        Building CXX object CMakeFiles/cmTC_c398b.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-disabled-macro-expansion -Wno-disabled-macro-expansion -MD -MT CMakeFiles/cmTC_c398b.dir/src.cxx.o -MF CMakeFiles/cmTC_c398b.dir/src.cxx.o.d -o CMakeFiles/cmTC_c398b.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-N8s4Up/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-disabled-macro-expansion 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_c398b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c398b.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_c398b.dir/src.cxx.o -o cmTC_c398b
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-N8s4Up'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wreserved-id-macro"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LJWI2Q"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LJWI2Q"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wreserved-id-macro"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LJWI2Q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8e1a1/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8e1a1.dir/build.make CMakeFiles/cmTC_8e1a1.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LJWI2Q'
+        Building CXX object CMakeFiles/cmTC_8e1a1.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wreserved-id-macro -Wreserved-id-macro -MD -MT CMakeFiles/cmTC_8e1a1.dir/src.cxx.o -MF CMakeFiles/cmTC_8e1a1.dir/src.cxx.o.d -o CMakeFiles/cmTC_8e1a1.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LJWI2Q/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wreserved-id-macro 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_8e1a1
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e1a1.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_8e1a1.dir/src.cxx.o -o cmTC_8e1a1
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LJWI2Q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wreserved-identifier"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-6pVV9n"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-6pVV9n"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wreserved-identifier"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-6pVV9n'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d8021/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d8021.dir/build.make CMakeFiles/cmTC_d8021.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-6pVV9n'
+        Building CXX object CMakeFiles/cmTC_d8021.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wreserved-identifier -Wreserved-identifier -MD -MT CMakeFiles/cmTC_d8021.dir/src.cxx.o -MF CMakeFiles/cmTC_d8021.dir/src.cxx.o.d -o CMakeFiles/cmTC_d8021.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-6pVV9n/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wreserved-identifier 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_d8021
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d8021.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_d8021.dir/src.cxx.o -o cmTC_d8021
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-6pVV9n'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-long-long"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-7fiphK"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-7fiphK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-long-long"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-7fiphK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8ca46/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8ca46.dir/build.make CMakeFiles/cmTC_8ca46.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-7fiphK'
+        Building CXX object CMakeFiles/cmTC_8ca46.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-long-long -Wno-long-long -MD -MT CMakeFiles/cmTC_8ca46.dir/src.cxx.o -MF CMakeFiles/cmTC_8ca46.dir/src.cxx.o.d -o CMakeFiles/cmTC_8ca46.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-7fiphK/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-long-long 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_8ca46
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8ca46.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_8ca46.dir/src.cxx.o -o cmTC_8ca46
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-7fiphK'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-unsafe-buffer-usage"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-b5dJAE"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-b5dJAE"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-unsafe-buffer-usage"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-b5dJAE'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_66541/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_66541.dir/build.make CMakeFiles/cmTC_66541.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-b5dJAE'
+        Building CXX object CMakeFiles/cmTC_66541.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-unsafe-buffer-usage -Wno-unsafe-buffer-usage -MD -MT CMakeFiles/cmTC_66541.dir/src.cxx.o -MF CMakeFiles/cmTC_66541.dir/src.cxx.o.d -o CMakeFiles/cmTC_66541.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-b5dJAE/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-unsafe-buffer-usage 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_66541
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66541.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_66541.dir/src.cxx.o -o cmTC_66541
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-b5dJAE'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Woverloaded-virtual"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LGvflz"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LGvflz"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Woverloaded-virtual"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LGvflz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_38876/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_38876.dir/build.make CMakeFiles/cmTC_38876.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LGvflz'
+        Building CXX object CMakeFiles/cmTC_38876.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Woverloaded-virtual -Woverloaded-virtual -MD -MT CMakeFiles/cmTC_38876.dir/src.cxx.o -MF CMakeFiles/cmTC_38876.dir/src.cxx.o.d -o CMakeFiles/cmTC_38876.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LGvflz/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Woverloaded-virtual 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_38876
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_38876.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_38876.dir/src.cxx.o -o cmTC_38876
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-LGvflz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-global-constructors"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rpMD6T"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rpMD6T"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-global-constructors"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rpMD6T'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c8371/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c8371.dir/build.make CMakeFiles/cmTC_c8371.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rpMD6T'
+        Building CXX object CMakeFiles/cmTC_c8371.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-global-constructors -Wno-global-constructors -MD -MT CMakeFiles/cmTC_c8371.dir/src.cxx.o -MF CMakeFiles/cmTC_c8371.dir/src.cxx.o.d -o CMakeFiles/cmTC_c8371.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rpMD6T/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-global-constructors 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_c8371
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8371.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_c8371.dir/src.cxx.o -o cmTC_c8371
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-rpMD6T'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-exit-time-destructors"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-vih02l"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-vih02l"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-exit-time-destructors"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-vih02l'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_6d928/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_6d928.dir/build.make CMakeFiles/cmTC_6d928.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-vih02l'
+        Building CXX object CMakeFiles/cmTC_6d928.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-exit-time-destructors -Wno-exit-time-destructors -MD -MT CMakeFiles/cmTC_6d928.dir/src.cxx.o -MF CMakeFiles/cmTC_6d928.dir/src.cxx.o.d -o CMakeFiles/cmTC_6d928.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-vih02l/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-exit-time-destructors 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_6d928
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6d928.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_6d928.dir/src.cxx.o -o cmTC_6d928
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-vih02l'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-weak-vtables"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-CIKcPg"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-CIKcPg"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-weak-vtables"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-CIKcPg'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7fea2/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7fea2.dir/build.make CMakeFiles/cmTC_7fea2.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-CIKcPg'
+        Building CXX object CMakeFiles/cmTC_7fea2.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-weak-vtables -Wno-weak-vtables -MD -MT CMakeFiles/cmTC_7fea2.dir/src.cxx.o -MF CMakeFiles/cmTC_7fea2.dir/src.cxx.o.d -o CMakeFiles/cmTC_7fea2.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-CIKcPg/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-weak-vtables 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_7fea2
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fea2.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_7fea2.dir/src.cxx.o -o cmTC_7fea2
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-CIKcPg'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXCompilerFlag.cmake:55 (cmake_check_compiler_flag)"
+      - "cmake/warnings.cmake:64 (check_cxx_compiler_flag)"
+      - "CMakeLists.txt:106 (include)"
+    checks:
+      - "Performing Test WARNING_CXX_FLAG_-Wno-old-style-cast"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-cuEAEO"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-cuEAEO"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "WARNING_CXX_FLAG_-Wno-old-style-cast"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-cuEAEO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_599e9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_599e9.dir/build.make CMakeFiles/cmTC_599e9.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-cuEAEO'
+        Building CXX object CMakeFiles/cmTC_599e9.dir/src.cxx.o
+        /usr/bin/c++   -Wno-error   -DWARNING_CXX_FLAG_-Wno-old-style-cast -Wno-old-style-cast -MD -MT CMakeFiles/cmTC_599e9.dir/src.cxx.o -MF CMakeFiles/cmTC_599e9.dir/src.cxx.o.d -o CMakeFiles/cmTC_599e9.dir/src.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-cuEAEO/src.cxx
+        In file included from <built-in>:479:
+        <command line>:1:26: warning: ISO C99 requires whitespace after the macro name [-Wc99-extensions]
+            1 | #define WARNING_CXX_FLAG_-Wno-old-style-cast 1
+              |                          ^
+        1 warning generated.
+        Linking CXX executable cmTC_599e9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_599e9.dir/link.txt --verbose=1
+        /usr/bin/c++  -Wno-error CMakeFiles/cmTC_599e9.dir/src.cxx.o -o cmTC_599e9
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-cuEAEO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:114 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for kill"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tJzSiD"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tJzSiD"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CPPUTEST_HAVE_KILL"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tJzSiD'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0b71e/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0b71e.dir/build.make CMakeFiles/cmTC_0b71e.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tJzSiD'
+        Building CXX object CMakeFiles/cmTC_0b71e.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_0b71e.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_0b71e.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_0b71e.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tJzSiD/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_0b71e
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b71e.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_0b71e.dir/CheckSymbolExists.cxx.o -o cmTC_0b71e
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-tJzSiD'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:115 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for fork"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TpGm8r"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TpGm8r"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CPPUTEST_HAVE_FORK"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TpGm8r'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79f5b/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_79f5b.dir/build.make CMakeFiles/cmTC_79f5b.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TpGm8r'
+        Building CXX object CMakeFiles/cmTC_79f5b.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_79f5b.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_79f5b.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_79f5b.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TpGm8r/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_79f5b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79f5b.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_79f5b.dir/CheckSymbolExists.cxx.o -o cmTC_79f5b
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TpGm8r'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:116 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for waitpid"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TfELRh"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TfELRh"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CPPUTEST_HAVE_WAITPID"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TfELRh'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_8da75/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_8da75.dir/build.make CMakeFiles/cmTC_8da75.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TfELRh'
+        Building CXX object CMakeFiles/cmTC_8da75.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_8da75.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_8da75.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_8da75.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TfELRh/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_8da75
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8da75.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_8da75.dir/CheckSymbolExists.cxx.o -o cmTC_8da75
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-TfELRh'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:117 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for gettimeofday"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-aPsSp1"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-aPsSp1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CPPUTEST_HAVE_GETTIMEOFDAY"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-aPsSp1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_0c134/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_0c134.dir/build.make CMakeFiles/cmTC_0c134.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-aPsSp1'
+        Building CXX object CMakeFiles/cmTC_0c134.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_0c134.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_0c134.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_0c134.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-aPsSp1/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_0c134
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c134.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_0c134.dir/CheckSymbolExists.cxx.o -o cmTC_0c134
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-aPsSp1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:118 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for pthread_mutex_lock"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-iu9mGA"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-iu9mGA"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CPPUTEST_HAVE_PTHREAD_MUTEX_LOCK"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-iu9mGA'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c3e18/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c3e18.dir/build.make CMakeFiles/cmTC_c3e18.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-iu9mGA'
+        Building CXX object CMakeFiles/cmTC_c3e18.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_c3e18.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_c3e18.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_c3e18.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-iu9mGA/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_c3e18
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3e18.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_c3e18.dir/CheckSymbolExists.cxx.o -o cmTC_c3e18
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-iu9mGA'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/CheckSymbolExists.cmake:163 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCXXSymbolExists.cmake:74 (__CHECK_SYMBOL_EXISTS_IMPL)"
+      - "CMakeLists.txt:121 (check_cxx_symbol_exists)"
+    checks:
+      - "Looking for strdup"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-59iPs1"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-59iPs1"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CPPUTEST_HAVE_STRDUP"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-59iPs1'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_1f94f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_1f94f.dir/build.make CMakeFiles/cmTC_1f94f.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-59iPs1'
+        Building CXX object CMakeFiles/cmTC_1f94f.dir/CheckSymbolExists.cxx.o
+        /usr/bin/c++    -MD -MT CMakeFiles/cmTC_1f94f.dir/CheckSymbolExists.cxx.o -MF CMakeFiles/cmTC_1f94f.dir/CheckSymbolExists.cxx.o.d -o CMakeFiles/cmTC_1f94f.dir/CheckSymbolExists.cxx.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-59iPs1/CheckSymbolExists.cxx
+        Linking CXX executable cmTC_1f94f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1f94f.dir/link.txt --verbose=1
+        /usr/bin/c++ CMakeFiles/cmTC_1f94f.dir/CheckSymbolExists.cxx.o -o cmTC_1f94f
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-59iPs1'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.31/Modules/Internal/CheckSourceCompiles.cmake:108 (try_compile)"
+      - "/usr/share/cmake-3.31/Modules/CheckCSourceCompiles.cmake:58 (cmake_check_source_compiles)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:97 (CHECK_C_SOURCE_COMPILES)"
+      - "/usr/share/cmake-3.31/Modules/FindThreads.cmake:163 (_threads_check_libc)"
+      - "src/CppUTest/CMakeLists.txt:91 (find_package)"
+    checks:
+      - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
+    directories:
+      source: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-wXYyFK"
+      binary: "/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-wXYyFK"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "/usr/bin/clang-scan-deps-20"
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/workspace/cpputest/cmake/Modules"
+    buildResult:
+      variable: "CMAKE_HAVE_LIBC_PTHREAD"
+      cached: true
+      stdout: |
+        Change Dir: '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-wXYyFK'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_c53c9/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_c53c9.dir/build.make CMakeFiles/cmTC_c53c9.dir/build
+        gmake[1]: Entering directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-wXYyFK'
+        Building C object CMakeFiles/cmTC_c53c9.dir/src.c.o
+        /usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -MD -MT CMakeFiles/cmTC_c53c9.dir/src.c.o -MF CMakeFiles/cmTC_c53c9.dir/src.c.o.d -o CMakeFiles/cmTC_c53c9.dir/src.c.o -c /workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-wXYyFK/src.c
+        Linking C executable cmTC_c53c9
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c53c9.dir/link.txt --verbose=1
+        /usr/bin/cc CMakeFiles/cmTC_c53c9.dir/src.c.o -o cmTC_c53c9
+        gmake[1]: Leaving directory '/workspace/cpputest_build/CMakeFiles/CMakeScratch/TryCompile-wXYyFK'
+        
+      exitCode: 0
+...

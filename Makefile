@@ -28,7 +28,7 @@ INCLUDE_DIRS =\
   $(SRC_DIRS)\
   $(CPPUTEST_HOME)/include
   
-PRDUCT_MAIN_OBJ = src/main.o
+PRODUCT_MAIN_OBJ = src/main.o
   
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
 
@@ -40,8 +40,8 @@ $(EVALUATOR_LIB) :
 .PHONY: product
 product : $(PRODUCT)
 
-$(PRODUCT): $(TARGET_LIB) $(PRDUCT_MAIN_OBJ) $(EVALUATOR_LIB) $(CPPUTEST_LIB)
+$(PRODUCT): $(TARGET_LIB) $(PRODUCT_MAIN_OBJ) $(EVALUATOR_LIB) $(CPPUTEST_LIB)
 	@echo 'Building target: $@'
 	$(CC) -o $@ -g $^ $(LD_LIBRARIES)
-	@echo 'Running the game. Go to your browser to play at http://localhst:8888'
+	@echo 'Running the game. Go to your browser to play at http://localhost:8888'
 	./$(PRODUCT)

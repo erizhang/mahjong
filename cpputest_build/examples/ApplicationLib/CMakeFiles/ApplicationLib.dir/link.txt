@@ -1,0 +1,2 @@
+/usr/bin/ar qc libApplicationLib.a CMakeFiles/ApplicationLib.dir/CircularBuffer.cpp.o CMakeFiles/ApplicationLib.dir/EventDispatcher.cpp.o CMakeFiles/ApplicationLib.dir/hello.c.o CMakeFiles/ApplicationLib.dir/Printer.cpp.o
+/usr/bin/ranlib libApplicationLib.a

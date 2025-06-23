@@ -1,0 +1,5 @@
+Running mahjong_tests
+.!.................................!........!.....
+
+OK (50 tests, 47 ran, 165 checks, 3 ignored, 0 filtered out, 1 ms)
+
