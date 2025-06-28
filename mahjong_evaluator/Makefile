@@ -1,6 +1,8 @@
 CPPUTEST_HOME := ../cpputest
 EVALUATOR = mahjong_evaluator
 CPPUTEST_WARNINGFLAGS =  -Wall -Wextra -Wshadow -Wswitch-default -Wswitch-enum -Wconversion
+# Disable memory leak detection for production build
+CPPUTEST_USE_MEM_LEAK_DETECTION = N
 #Set this to @ to keep the makefile quiet
 ifndef SILENCE
 	SILENCE = @

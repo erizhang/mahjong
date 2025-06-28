@@ -7,6 +7,9 @@
 #include "agent.h"
 #include "ui_agent.h"
 
+// Define the shutdown_server function pointer
+void (*shutdown_server)(void);
+
 static int ui_adaptor_pool_add_ui_adaptor(agent_t * ui);
 static agent_t * ui_adaptor_pool_get_ui_adaptor_by_id(int id);
 static void ui_adaptor_pool_remove(int id);

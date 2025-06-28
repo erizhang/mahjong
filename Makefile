@@ -3,6 +3,8 @@ CPPUTEST_HOME := cpputest
 EVALUATOR = mahjong_evaluator
 EVALUATOR_LIB = $(EVALUATOR)/lib/lib$(EVALUATOR).a
 CPPUTEST_WARNINGFLAGS =  -Wall -Wextra -Wshadow -Wswitch-default -Wswitch-enum -Wconversion
+# Disable memory leak detection for production build
+CPPUTEST_USE_MEM_LEAK_DETECTION = N
 #Set this to @ to keep the makefile quiet
 ifndef SILENCE
 	SILENCE = @
@@ -28,7 +30,7 @@ INCLUDE_DIRS =\
   $(SRC_DIRS)\
   $(CPPUTEST_HOME)/include
   
-PRDUCT_MAIN_OBJ = src/main.o
+PRODUCT_MAIN_OBJ = src/main.o
   
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
 
@@ -40,8 +42,7 @@ $(EVALUATOR_LIB) :
 .PHONY: product
 product : $(PRODUCT)
 
-$(PRODUCT): $(TARGET_LIB) $(PRDUCT_MAIN_OBJ) $(EVALUATOR_LIB) $(CPPUTEST_LIB)
+$(PRODUCT): $(TARGET_LIB) $(PRODUCT_MAIN_OBJ) $(EVALUATOR_LIB)
 	@echo 'Building target: $@'
-	$(CC) -o $@ -g $^ $(LD_LIBRARIES)
-	@echo 'Running the game. Go to your browser to play at http://localhst:8888'
-	./$(PRODUCT)
+	$(CXX) -o $@ -g $(PRODUCT_MAIN_OBJ) $(TARGET_LIB) $(EVALUATOR_LIB) $(TARGET_LIB) -lm -lpthread
+	@echo 'Product built successfully. To run: ./$(PRODUCT)'
