@@ -40,8 +40,10 @@ $(EVALUATOR_LIB) :
 .PHONY: product
 product : $(PRODUCT)
 
-$(PRODUCT): $(TARGET_LIB) $(PRDUCT_MAIN_OBJ) $(EVALUATOR_LIB) $(CPPUTEST_LIB)
+$(PRODUCT): $(TARGET_LIB) src/main_product.o $(EVALUATOR_LIB) $(CPPUTEST_LIB)
 	@echo 'Building target: $@'
-	$(CC) -o $@ -g $^ $(LD_LIBRARIES)
+	$(CC) -o $@ -g src/main_product.o $(TARGET_LIB) $(EVALUATOR_LIB) $(CPPUTEST_LIB) $(LD_LIBRARIES) -lpthread -lstdc++ -lm
 	@echo 'Running the game. Go to your browser to play at http://localhst:8888'
-	./$(PRODUCT)
+
+src/main_product.o: src/main.c
+	$(CC) -c -o $@ $< -I. -Iinclude -Isrc/exercise -Isrc/html_ui -Isrc/mahjong_game
