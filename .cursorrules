@@ -1,0 +1,25 @@
+- 对任何问题，先规划，再执行
+当你执行过程中遇到对工具的使用问题，经验教训记录回.cursorrules文件中
+
+## 编译问题修复经验教训
+
+### C/C++ 多重定义错误
+- **问题**：头文件中定义全局变量导致链接时出现 "multiple definition" 错误
+- **解决**：在头文件中使用 `extern` 声明，在唯一的源文件中定义
+- **示例**：`extern void (*shutdown_server)(void);` 在头文件，`void (*shutdown_server)(void);` 在源文件
+
+### CppUTest 宏使用
+- **问题**：`CHECK_C_LOCATION` 等复杂宏容易出错
+- **解决**：使用简单的宏如 `CHECK_TRUE_TEXT(condition, message)`
+- **建议**：查阅 CppUTest 文档确认宏的正确参数数量和用法
+
+### Makefile 调试
+- **检查**：变量名拼写错误（如 PRDUCT vs PRODUCT）
+- **检查**：URL 拼写错误（如 localhst vs localhost）
+- **方法**：逐步编译，先清理再构建
+
+### 编译流程
+1. 先修复主要的链接错误（multiple definition）
+2. 再修复语法错误（missing semicolon, wrong macros）
+3. 最后处理警告（如果需要）
+4. 验证主项目和子项目都能编译成功
