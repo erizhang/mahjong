@@ -115,11 +115,11 @@ TEST_GROUP(evaluator_values)
 		int s2 = e(t2);
 		char temp[200];
 		sprintf(temp, "t1(%d) > t2(%d)", s1, s2);
-		CHECK_C_LOCATION(s1 > s2, temp, file, line);
+		CHECK_TRUE_LOCATION(s1 > s2, temp, "s1 > s2", temp, file, line);
 	}
 };
 #define T1_BIGGER_THAN_T2(t1, t2)\
-		compare_tile_strings_bigger(t1, t2, __FILE__, __LINE__)
+		compare_tile_strings_bigger(t1, t2, __FILE__, __LINE__);
 TEST(evaluator_values, one_tile) {
 	T1_BIGGER_THAN_T2("2","1");
 }
@@ -164,7 +164,7 @@ TEST(evaluator_values, 3_tiles) {
 TEST(evaluator_values, 4_tiles) {
 //	T1_BIGGER_THAN_T2("1357","13BD");
 	T1_BIGGER_THAN_T2("2468","1357");
-	LONGS_EQUAL(e("1357"), e("3579"))
+	LONGS_EQUAL(e("1357"), e("3579"));
 	T1_BIGGER_THAN_T2("2467","2468");
 	T1_BIGGER_THAN_T2("2357","2468");
 	T1_BIGGER_THAN_T2("2346","2357");
